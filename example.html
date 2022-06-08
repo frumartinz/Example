@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+<!-----navbar starts here----->
+
+<div class="myheading">
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-3" id="cos-nav">
+        <div class="container">
+            <a href="#" class="navbar-brand">Bus System</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#classic" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Our services</a>
+                    </li>
+                    <!------Sign up------>
+                    <!-- Button trigger modal -->
+
+                    <button type="button" class="btn " id="own-color" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Sign up</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sign up for your Account</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="firstname">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" id="lastname">
+                                      </div>
+                                    <div class="col-md-12">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-12">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-md-12">
+                                      <label for="inputPassword4" class="form-label">Confirm Password</label>
+                                      <input type="password" class="form-control" id="inputPassword5">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Company's Name</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="Example LTD">
+                                    </div>
+                                    
+                                    <div class="col-md-12">
+                                      <label for="inputState" class="form-label">Country</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>USA</option>
+                                        <option>Canada</option>
+                                        <option>South Africa</option>
+                                        <option>Nigeria</option>
+                                        <option>Ghana</option>
+                                      </select>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                      <label for="inputCity" class="form-label">City</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    
+                                    
+                                      <button type="submit" class="btn btn-primary">Sign up</button>
+                                    </div>
+                                  </form>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        </div>
+
+                    <!-------Sign up form ends here-->
+
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+</div>
+<!----navbar ends here------>
+
+<!------main-section-------->
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade shift-down" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Bus1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Bus2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Bus3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <div class="col-sm-4">
+        <form id="custome-form">
+          <!-- <div class="modal-header my-modal">
+            <h5 class="modal-title" id="exampleModalLabel">Sign up for your Account</h5>
+        </div>
+            <div class="shift-down">
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3">
+                </div>
+              </div>
+              
+              <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <br/>
+              
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div> -->
+
+            <div class="myown">
+              <div class="my-head">
+                <h2>Login to your Account</h2>
+              </div>
+              <form>
+                <div class="dot">
+                  <div class="myd">
+                    <label>Email</label>
+                    <input type="email">
+                  </div>
+    
+                  <div class="myd">
+                    <label>Password</label>
+                    <input type="password">
+                  </div>
+                  <div class="my">
+                    <input type="checkbox"> Remember me
+                  </div>  
+                
+  
+                  <button class="butt">Sumit</button>
+                  <button class="my-button"><a href="#">Creat account</a></button>
+                </div>
+              </form>
+            </div>
+    <!-- <div class="row">
+      <div class="col-sm">col-sm</div>
+      <div class="col-sm">col-sm</div>
+      <div class="col-sm">col-sm</div>
+    </div> -->
+  </div>
+
+
+
+
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+<footer>this is some text</footer>
+</html>
